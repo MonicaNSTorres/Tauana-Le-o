@@ -39,7 +39,7 @@ export function LocalSEO() {
             <Reveal delay={0.4}>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <a
-                  href="https://wa.me/5512999999999"
+                  href="https://www.doctoralia.com.br/tauana-brogio-leao/endocrinologista/sao-jose-dos-campos#profile-pricing"
                   className="inline-flex items-center justify-center rounded-full bg-[#A05E4B] px-7 py-4 text-sm font-semibold text-white transition hover:bg-[#8B503F]"
                 >
                   Agendar consulta

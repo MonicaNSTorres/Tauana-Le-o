@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Reveal } from "@/components/animations/reveal";
+import Image from "next/image";
 
 const quickLinks = [
   { label: "Sobre", href: "#sobre" },
@@ -20,7 +21,7 @@ export function Footer() {
       <div className="max-w-6xl mx-auto px-6 py-16">
         <div className="grid gap-12 md:grid-cols-[1.2fr_0.8fr_0.8fr_1fr]">
           <Reveal>
-            <div>
+            {/*<div>
               <h3 className="text-3xl text-[#A05E4B]">Dra. Tauana Leão</h3>
 
               <p className="mt-3 text-sm uppercase tracking-[0.25em] text-[#859D91]">
@@ -31,6 +32,20 @@ export function Footer() {
                 Atendimento com foco em equilíbrio hormonal, saúde metabólica e
                 acompanhamento individualizado, unindo clareza, escuta e cuidado
                 humano em cada etapa da jornada do paciente.
+              </p>
+            </div>*/}
+            <div className="flex flex-col gap-4">
+              <Image
+                src="/logo-dra-tauana.png"
+                alt="Dra. Tauana Leão - Endocrinologia e Metabologia"
+                width={220}
+                height={80}
+                className="h-auto w-[180px]"
+              />
+
+              <p className="text-sm text-[#6E554D] leading-relaxed max-w-xs">
+                Atendimento em endocrinologia com foco em equilíbrio hormonal,
+                metabolismo e acompanhamento individualizado.
               </p>
             </div>
           </Reveal>
@@ -99,7 +114,7 @@ export function Footer() {
               </div>
 
               <a
-                href="https://wa.me/5512999999999"
+                href="https://www.doctoralia.com.br/tauana-brogio-leao/endocrinologista/sao-jose-dos-campos#profile-pricing"
                 className="mt-6 inline-flex rounded-full bg-[#A05E4B] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#8B503F]"
               >
                 Agendar consulta
@@ -114,7 +129,8 @@ export function Footer() {
           </p>
 
           <p className="text-sm text-[#859D91]">
-            Site desenvolvido com foco em performance, experiência e presença digital.
+            {/*Site desenvolvido com foco em performance, experiência e presença digital.*/}
+            Site desenvolvido por Mônica Torres
           </p>
         </div>
       </div>

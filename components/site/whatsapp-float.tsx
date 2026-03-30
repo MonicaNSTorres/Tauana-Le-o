@@ -3,7 +3,7 @@
 export function WhatsAppFloat() {
   return (
     <a
-      href="https://wa.me/5512999999999"
+      href="https://wa.me/5512991845963?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Tauana%20Leão."
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-16 h-16 rounded-full bg-green-500 shadow-xl hover:scale-110 transition"

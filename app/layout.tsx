@@ -4,11 +4,12 @@ import "./globals.css";
 import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
 import { WhatsAppFloat } from "@/components/site/whatsapp-float";
+import localFont from "next/font/local";
 
-const playfair = Playfair_Display({
-  subsets: ["latin"],
+const blackMango = localFont({
+  src: "./fonts/black-mango-regular.ttf",
   variable: "--font-heading",
-  weight: ["500", "600", "700"],
+  display: "swap",
 });
 
 const poppins = Poppins({
@@ -59,7 +60,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="pt-BR" className={`${playfair.variable} ${poppins.variable}`}>
+    <html lang="pt-BR" className={`${blackMango.variable} ${poppins.variable}`}>
       <body>
         <Header />
 

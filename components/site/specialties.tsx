@@ -82,7 +82,7 @@ export function Specialties() {
 
                 {item.href === "#" ? (
                   <a
-                    href="https://wa.me/5512999999999"
+                    href="https://www.doctoralia.com.br/tauana-brogio-leao/endocrinologista/sao-jose-dos-campos#profile-pricing"
                     className="mt-8 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.18em] text-[#859D91] transition group-hover:text-[#A05E4B]"
                   >
                     Agendar avaliação

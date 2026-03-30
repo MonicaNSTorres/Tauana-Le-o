@@ -10,6 +10,9 @@
   --beige: #faf0e6;
   --terra: #a05e4b;
   --peach: #d88b7b;
+
+  --font-heading: "Black Mango", serif;
+  --font-body: "Poppins", sans-serif;
 }
 
 html {
@@ -19,7 +22,11 @@ html {
 body {
   background: var(--white);
   color: var(--foreground);
-  font-family: var(--font-body), sans-serif;
+  font-family: var(--font-body);
+}
+
+.font-heading {
+  font-family: var(--font-heading);
 }
 
 h1,
