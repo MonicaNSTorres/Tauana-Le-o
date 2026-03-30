@@ -7,20 +7,28 @@ import { Reveal } from "@/components/animations/reveal";
 
 const testimonials = [
   {
-    name: "Paciente",
-    text: "Atendimento extremamente humano, cuidadoso e claro. Me senti acolhida do início ao fim da consulta.",
+    name: "Rosely",
+    text: "Atenciosa, humanizada, muito simpática e fez um regresso detalhado do meu histórico de saúde. Excelente profissional.",
   },
   {
-    name: "Paciente",
-    text: "A Dra. Tauana tem um olhar muito atento e passa muita confiança. Explica tudo com calma e profundidade.",
+    name: "Manuely",
+    text: "Muito atenciosa e simpatica! Você percebe que realmente quer ajudar o paciente.",
   },
   {
-    name: "Paciente",
-    text: "Um atendimento elegante, acolhedor e objetivo. Saí da consulta entendendo exatamente o meu plano de cuidado.",
+    name: "Matheus",
+    text: "Ela é super atenciosa o atendimento é ótimo o consultório é muito bonito.",
   },
   {
-    name: "Paciente",
-    text: "Consulta acolhedora, explicações muito claras e uma condução extremamente profissional. Experiência excelente.",
+    name: "Amanda Lima",
+    text: "Dra Tauana é maravilhosa, explicou tudo nos mínimos detalhes, foi uma consulta leve, super recomendo! Explicou todo o tratamento nos mínimos detalhes e deu um panorama geral do caso em que estávamos buscando ajuda, trouxe bastante clareza! Com certeza iremos retornar e fazer todo o tratamento.",
+  },
+  {
+    name: "Leticia",
+    text: "Consulta excelente! A doutora é muito cuidadosa, atenciosa e transmite confiança. Explicou cada etapa com paciência e me orientou da melhor forma possível. Recomendo.",
+  },
+  {
+    name: "Polyana",
+    text: "Um atendimento ótimo, a doutora é super esclarecida, tirou minhas dúvidas e avaliou o melhor tratamento para o meu caso. Fico feliz e aliviada em saber que estarei sendo acompanhada por ela.",
   },
 ];
 
