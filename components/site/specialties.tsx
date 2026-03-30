@@ -21,28 +21,40 @@ const specialties = [
     href: "/tireoide",
   },
   {
-    title: "Reposição hormonal e menopausa",
+    title: "Menopausa e acompanhamento hormonal",
     description:
-      "Condutas personalizadas para fases de transição hormonal, com escuta, segurança e decisões clínicas individualizadas.",
-    href: "#",
+      "Condutas individualizadas para sintomas da menopausa e fases de transição hormonal, com foco em qualidade de vida, segurança e equilíbrio.",
+    href: "/menopausa-hormonios",
   },
   {
-    title: "Síndrome metabólica",
+    title: "Síndrome dos ovários policísticos",
     description:
-      "Cuidado integrado para alterações metabólicas relacionadas a peso, glicemia, colesterol e risco cardiovascular.",
-    href: "#",
+      "Avaliação clínica e hormonal para investigar irregularidades menstruais, alterações metabólicas e sintomas associados à SOP.",
+    href: "/sindrome-ovarios-policisticos",
   },
   {
-    title: "Alterações hormonais femininas",
+    title: "Metabolismo e emagrecimento",
     description:
-      "Acompanhamento clínico de oscilações hormonais, sintomas associados e impacto na rotina, saúde e bem-estar.",
-    href: "#",
+      "Investigação de alterações metabólicas, composição corporal e fatores que influenciam o emagrecimento saudável e sustentável.",
+    href: "/metabolismo-emagrecimento",
+  },
+  {
+    title: "Acompanhamento pós-bariátrica",
+    description:
+      "Cuidado endocrinológico no pós-operatório com atenção ao metabolismo, exames, adaptação clínica e manutenção da saúde ao longo do tempo.",
+    href: "/pos-bariatrica",
+  },
+  {
+    title: "Avaliação metabólica completa",
+    description:
+      "Cuidado integrado para alterações hormonais e metabólicas relacionadas a peso, glicemia, colesterol, exames e saúde global.",
+    href: "https://www.doctoralia.com.br/tauana-brogio-leao/endocrinologista/sao-jose-dos-campos#profile-pricing",
   },
 ];
 
 export function Specialties() {
   return (
-    <section id="atuacao" className="py-24 bg-white">
+    <section id="atuacao" className="bg-white py-24">
       <div className="max-w-6xl mx-auto px-6">
         <Reveal>
           <span className="text-sm font-semibold uppercase tracking-[0.25em] text-[#D88B7B]">
@@ -65,41 +77,51 @@ export function Specialties() {
         </Reveal>
 
         <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {specialties.map((item, index) => (
-            <Reveal key={item.title} delay={index * 0.08}>
-              <article className="group flex h-full flex-col rounded-[30px] border border-[#A05E4B]/10 bg-[#FAF0E6] p-8 transition duration-300 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(160,94,75,0.12)]">
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-[#A05E4B] shadow-sm">
-                  <span className="text-xl">+</span>
-                </div>
+          {specialties.map((item, index) => {
+            const isExternal = item.href.startsWith("http");
 
-                <h3 className="mt-6 text-2xl leading-snug text-[#A05E4B]">
-                  {item.title}
-                </h3>
+            return (
+              <Reveal key={item.title} delay={index * 0.08}>
+                <article className="group flex h-full flex-col rounded-[30px] border border-[#A05E4B]/10 bg-[#FAF0E6] p-8 transition duration-300 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(160,94,75,0.12)]">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-[#A05E4B] shadow-sm">
+                    <span className="text-xl">+</span>
+                  </div>
 
-                <p className="mt-4 flex-1 leading-8 text-[#6E554D]">
-                  {item.description}
-                </p>
+                  <h3 className="mt-6 text-2xl leading-snug text-[#A05E4B]">
+                    {item.title}
+                  </h3>
 
-                {item.href === "#" ? (
-                  <a
-                    href="https://www.doctoralia.com.br/tauana-brogio-leao/endocrinologista/sao-jose-dos-campos#profile-pricing"
-                    className="mt-8 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.18em] text-[#859D91] transition group-hover:text-[#A05E4B]"
-                  >
-                    Agendar avaliação
-                    <span className="transition group-hover:translate-x-1">→</span>
-                  </a>
-                ) : (
-                  <Link
-                    href={item.href}
-                    className="mt-8 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.18em] text-[#859D91] transition group-hover:text-[#A05E4B]"
-                  >
-                    Saiba mais
-                    <span className="transition group-hover:translate-x-1">→</span>
-                  </Link>
-                )}
-              </article>
-            </Reveal>
-          ))}
+                  <p className="mt-4 flex-1 leading-8 text-[#6E554D]">
+                    {item.description}
+                  </p>
+
+                  {isExternal ? (
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-8 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.18em] text-[#859D91] transition group-hover:text-[#A05E4B]"
+                    >
+                      Agendar avaliação
+                      <span className="transition group-hover:translate-x-1">
+                        →
+                      </span>
+                    </a>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      className="mt-8 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.18em] text-[#859D91] transition group-hover:text-[#A05E4B]"
+                    >
+                      Saiba mais
+                      <span className="transition group-hover:translate-x-1">
+                        →
+                      </span>
+                    </Link>
+                  )}
+                </article>
+              </Reveal>
+            );
+          })}
         </div>
       </div>
     </section>

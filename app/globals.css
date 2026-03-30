@@ -59,3 +59,52 @@ h6 {
 .soft-shadow {
   box-shadow: 0 20px 60px rgba(160, 94, 75, 0.12);
 }
+
+.hero-aurora {
+  overflow: hidden;
+}
+
+.hero-blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(95px);
+  opacity: 0.8;
+  animation: heroFloat 10s ease-in-out infinite;
+  will-change: transform;
+}
+
+.hero-blob-1 {
+  width: 34rem;
+  height: 34rem;
+  left: -8rem;
+  top: 0;
+  background: rgba(251, 179, 156, 0.38);
+}
+
+.hero-blob-2 {
+  width: 36rem;
+  height: 36rem;
+  right: -8rem;
+  top: -3rem;
+  background: rgba(133, 157, 145, 0.3);
+  animation-delay: -3s;
+}
+
+.hero-blob-3 {
+  width: 26rem;
+  height: 26rem;
+  left: 30%;
+  bottom: -6rem;
+  background: rgba(216, 139, 123, 0.22);
+  animation-delay: -6s;
+}
+
+@keyframes heroFloat {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -28px, 0) scale(1.08);
+  }
+}

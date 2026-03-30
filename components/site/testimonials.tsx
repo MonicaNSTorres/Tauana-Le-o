@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { ArrowLeft, ArrowRight, Star } from "lucide-react";
 import { Reveal } from "@/components/animations/reveal";
@@ -37,6 +37,16 @@ export function Testimonials() {
 
   const scrollNext = useCallback(() => {
     emblaApi?.scrollNext();
+  }, [emblaApi]);
+
+  useEffect(() => {
+    if (!emblaApi) return;
+
+    const autoplay = setInterval(() => {
+      emblaApi.scrollNext();
+    }, 4500);
+
+    return () => clearInterval(autoplay);
   }, [emblaApi]);
 
   return (
@@ -92,10 +102,7 @@ export function Testimonials() {
                   <article className="flex h-full flex-col rounded-[30px] border border-[#A05E4B]/10 bg-[#FAF0E6] p-8 shadow-[0_18px_50px_rgba(160,94,75,0.06)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_60px_rgba(160,94,75,0.10)]">
                     <div className="flex items-center gap-1 text-[#D88B7B]">
                       {Array.from({ length: 5 }).map((_, starIndex) => (
-                        <Star
-                          key={starIndex}
-                          className="h-4 w-4 fill-current"
-                        />
+                        <Star key={starIndex} className="h-4 w-4 fill-current" />
                       ))}
                     </div>
 

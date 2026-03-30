@@ -3,11 +3,11 @@ import { Reveal } from "@/components/animations/reveal";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#FAF0E6] py-16 sm:py-20 lg:py-24">
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -left-20 top-10 h-56 w-56 rounded-full bg-[#FBB39C]/20 blur-3xl" />
-        <div className="absolute right-0 top-0 h-72 w-72 rounded-full bg-[#859D91]/10 blur-3xl" />
-        <div className="absolute bottom-0 left-1/3 h-52 w-52 rounded-full bg-[#D88B7B]/10 blur-3xl" />
+    <section className="relative overflow-hidden bg-[radial-gradient(circle_at_top_left,rgba(251,179,156,0.18),transparent_30%),radial-gradient(circle_at_top_right,rgba(133,157,145,0.14),transparent_35%),#FAF0E6] py-16 sm:py-20 lg:py-24">
+      <div className="hero-aurora pointer-events-none absolute inset-0">
+        <div className="hero-blob hero-blob-1" />
+        <div className="hero-blob hero-blob-2" />
+        <div className="hero-blob hero-blob-3" />
       </div>
 
       <div className="relative mx-auto grid max-w-6xl items-center gap-14 px-6 lg:grid-cols-[1.05fr_0.95fr]">
@@ -19,7 +19,7 @@ export function Hero() {
           </Reveal>
 
           <Reveal delay={0.08}>
-            <h1 className="mt-5 max-w-2xl text-5xl leading-[0.95] text-[#A05E4B] sm:text-6xl lg:text-7xl">
+            <h1 className="mt-5 max-w-2xl text-4xl leading-[0.98] text-[#A05E4B] sm:text-6xl lg:text-7xl">
               Equilíbrio hormonal e saúde metabólica com olhar individual
             </h1>
           </Reveal>
@@ -35,7 +35,7 @@ export function Hero() {
           <Reveal delay={0.24}>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
-                href="https://www.doctoralia.com.br/tauana-brogio-leao/endocrinologista/sao-jose-dos-campos#profile-pricing"
+                href="https://wa.me/5512991845963?text=Olá%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Tauana%20Leão."
                 className="inline-flex items-center justify-center rounded-full bg-[#A05E4B] px-8 py-4 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#8C523F] hover:shadow-[0_16px_35px_rgba(160,94,75,0.25)]"
               >
                 Agendar consulta
@@ -50,9 +50,9 @@ export function Hero() {
             </div>
           </Reveal>
 
-          <div className="mt-12 grid gap-4 sm:grid-cols-3 items-stretch">
+          <div className="mt-12 grid items-stretch gap-4 sm:grid-cols-3">
             <Reveal delay={0.3} className="h-full">
-              <div className="flex h-full flex-col rounded-[22px] border border-white/40 bg-white/75 p-5 backdrop-blur-sm shadow-[0_10px_30px_rgba(160,94,75,0.08)]">
+              <div className="flex h-full min-h-[170px] flex-col rounded-[22px] border border-white/40 bg-white/75 p-5 backdrop-blur-sm shadow-[0_10px_30px_rgba(160,94,75,0.08)]">
                 <p className="text-xs uppercase tracking-[0.22em] text-[#859D91]">
                   abordagem
                 </p>
@@ -63,7 +63,7 @@ export function Hero() {
             </Reveal>
 
             <Reveal delay={0.38} className="h-full">
-              <div className="flex h-full flex-col rounded-[22px] border border-white/40 bg-white/75 p-5 backdrop-blur-sm shadow-[0_10px_30px_rgba(160,94,75,0.08)]">
+              <div className="flex h-full min-h-[170px] flex-col rounded-[22px] border border-white/40 bg-white/75 p-5 backdrop-blur-sm shadow-[0_10px_30px_rgba(160,94,75,0.08)]">
                 <p className="text-xs uppercase tracking-[0.22em] text-[#859D91]">
                   foco
                 </p>
@@ -74,7 +74,7 @@ export function Hero() {
             </Reveal>
 
             <Reveal delay={0.46} className="h-full">
-              <div className="flex h-full flex-col rounded-[22px] border border-white/40 bg-white/75 p-5 backdrop-blur-sm shadow-[0_10px_30px_rgba(160,94,75,0.08)]">
+              <div className="flex h-full min-h-[170px] flex-col rounded-[22px] border border-white/40 bg-white/75 p-5 backdrop-blur-sm shadow-[0_10px_30px_rgba(160,94,75,0.08)]">
                 <p className="text-xs uppercase tracking-[0.22em] text-[#859D91]">
                   cuidado
                 </p>
@@ -88,8 +88,8 @@ export function Hero() {
 
         <Reveal delay={0.18}>
           <div className="relative">
-            <div className="absolute -left-6 top-12 h-32 w-32 rounded-full bg-[#FBB39C]/30 blur-3xl" />
-            <div className="absolute -right-8 bottom-10 h-40 w-40 rounded-full bg-[#859D91]/20 blur-3xl" />
+            <div className="absolute -left-12 top-10 h-52 w-52 rounded-full bg-[#FBB39C]/40 blur-3xl" />
+            <div className="absolute -right-12 bottom-8 h-64 w-64 rounded-full bg-[#859D91]/32 blur-3xl" />
 
             <div className="relative overflow-hidden rounded-[36px] bg-white/70 p-4 shadow-[0_35px_80px_rgba(160,94,75,0.14)] backdrop-blur-sm">
               <div className="relative h-[520px] overflow-hidden rounded-[30px] sm:h-[620px]">

@@ -125,11 +125,11 @@ export function Footer() {
 
         <div className="mt-14 border-t border-[#A05E4B]/10 pt-6 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
           <p className="text-sm text-[#6E554D]">
-            © {new Date().getFullYear()} Dra. Tauana Leão. Todos os direitos reservados.
+            © {new Date().getFullYear()} Dra. Tauana Leão — Endocrinologia e Metabologia<br />
+            CRM-SP 233820
           </p>
 
           <p className="text-sm text-[#859D91]">
-            {/*Site desenvolvido com foco em performance, experiência e presença digital.*/}
             Site desenvolvido por Mônica Torres
           </p>
         </div>

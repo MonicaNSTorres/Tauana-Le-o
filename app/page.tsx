@@ -11,6 +11,7 @@ import { Footer } from "@/components/site/footer";
 import { WhatsAppFloat } from "@/components/site/whatsapp-float";
 import { FAQSchema } from "@/components/seo/faq-schema";
 import { LocalSEO } from "@/components/site/local-seo";
+import { Differentials } from "@/components/site/differentials";
 
 export default function HomePage() {
   return (
@@ -21,6 +22,7 @@ export default function HomePage() {
       <Specialties />
       <WhenToSeek />
       <About />
+      <Differentials />
       <Testimonials />
       <LocalSEO />
       <FAQ />

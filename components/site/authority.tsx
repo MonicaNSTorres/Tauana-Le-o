@@ -2,7 +2,7 @@ import { Reveal } from "@/components/animations/reveal";
 
 export function Authority() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-[#FAF0E6]">
       <div className="max-w-6xl mx-auto px-6">
 
         <Reveal>
@@ -12,7 +12,7 @@ export function Authority() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <h2 className="text-5xl text-[#A05E4B] mt-4">
+          <h2 className="text-5xl text-[#A05E4B] mt-4 max-w-3xl leading-tight">
             Medicina baseada em ciência, equilíbrio e cuidado humano
           </h2>
         </Reveal>
@@ -20,7 +20,7 @@ export function Authority() {
         <div className="grid md:grid-cols-3 gap-8 mt-14">
 
           <Reveal delay={0.2}>
-            <div className="bg-[#FAF0E6] rounded-3xl p-8">
+            <div className="bg-white rounded-3xl p-8 shadow-[0_15px_45px_rgba(160,94,75,0.08)]">
               <h3 className="text-xl text-[#A05E4B] font-semibold">
                 Formação médica
               </h3>
@@ -33,7 +33,7 @@ export function Authority() {
           </Reveal>
 
           <Reveal delay={0.3}>
-            <div className="bg-[#FAF0E6] rounded-3xl p-8">
+            <div className="bg-white rounded-3xl p-8 shadow-[0_15px_45px_rgba(160,94,75,0.08)]">
               <h3 className="text-xl text-[#A05E4B] font-semibold">
                 Atendimento personalizado
               </h3>
@@ -46,7 +46,7 @@ export function Authority() {
           </Reveal>
 
           <Reveal delay={0.4}>
-            <div className="bg-[#FAF0E6] rounded-3xl p-8">
+            <div className="bg-white rounded-3xl p-8 shadow-[0_15px_45px_rgba(160,94,75,0.08)]">
               <h3 className="text-xl text-[#A05E4B] font-semibold">
                 Atualização científica
               </h3>
