@@ -107,10 +107,20 @@ export function Footer() {
               </p>
 
               <div className="mt-5 space-y-3 text-[#6E554D] leading-7">
-                <p>WhatsApp: (12) 99999-9999</p>
-                <p>Instagram: @dratauanaleao</p>
+                <p>WhatsApp: (12) 99184-5963</p>
+                <p>
+                  Instagram:
+                  <a
+                    href="https://www.instagram.com/dratauanaleao?igsh=MTUzd2oxdGR4cDVlbw%3D%3D&utm_source=qr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#A05E4B] hover:underline"
+                  >
+                    @dratauanaleao
+                  </a>
+                </p>
                 <p>São José dos Campos - SP</p>
-                <p>CRM/UF 000000</p>
+                <p>CRM-SP 233820</p>
               </div>
 
               <a
