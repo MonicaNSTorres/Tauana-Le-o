@@ -13,7 +13,7 @@ export function About() {
             <div className="relative overflow-hidden rounded-[34px] bg-[#FAF0E6] p-4 shadow-[0_35px_80px_rgba(0,0,0,0.10)]">
               <div className="relative h-[540px] overflow-hidden rounded-[28px]">
                 <Image
-                  src="/tauana.jpeg"
+                  src="/tauana_sobre.jpeg"
                   alt="Dra. Tauana Leão"
                   fill
                   className="object-cover object-top"

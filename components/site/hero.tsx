@@ -94,7 +94,7 @@ export function Hero() {
             <div className="relative overflow-hidden rounded-[36px] bg-white/70 p-4 shadow-[0_35px_80px_rgba(160,94,75,0.14)] backdrop-blur-sm">
               <div className="relative h-[520px] overflow-hidden rounded-[30px] sm:h-[620px]">
                 <Image
-                  src="/tauana.jpeg"
+                  src="/tauanaleao.jpeg"
                   alt="Dra. Tauana Leão"
                   fill
                   priority
